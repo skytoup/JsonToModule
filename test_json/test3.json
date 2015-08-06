@@ -1,0 +1,23 @@
+[
+   {
+      "precision": "zip",
+      "Latitude":  37.7668,
+      "Longitude": -122.3959,
+      "Thumbnail": {
+          "Url":    "和谐xxx",
+          "Height": 125,
+          "Width":  "100"
+      }
+   },
+   {
+      "precision": "zip",
+      "Latitude":  37.371991,
+      "Longitude": -122.026020,
+        "Thumbnail": {
+          "Url":    "和谐xxx",
+          "Height": 125,
+          "Width":  "100"
+      }
+     
+   }
+]
