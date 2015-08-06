@@ -3,6 +3,9 @@
 	暂不支持一个array的下一级，还是array
 	项目根目录下的java_head.txt，和objective-c_head.txt的内容会复制到生成的文件开始处
 
+###实现逻辑大概是这样子的
+![PNG](jsonToModule.png)
+
 ###用到的第三方开源库
 	cJSON c语言的json解析库
 
