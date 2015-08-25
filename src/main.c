@@ -112,8 +112,8 @@ int main(int argc, const char * argv[]) {
         // json file name
         int sl = find_char_reverse(json_file_path, '/');
         int el = find_char_reverse(json_file_path, '.');
-        sl = sl==-1?0:sl+1;
-        el = el==-1?((int)strlen(json_file_path)-1):el-1;
+        sl = (sl==-1?0:sl+1);
+        el = (el==-1?((int)strlen(json_file_path)-1):el-1);
         class_name = malloc(sizeof(char)*(el-sl+1));
         need_free_class_name = 1;
         strncpy(class_name, json_file_path+sl, el-sl+1);
@@ -152,7 +152,7 @@ int main(int argc, const char * argv[]) {
     for(;;) {
         size = fread(buf, 1, 1024, file);
         if(size) {
-            strcat(text, buf);
+            strncat(text, buf, size);
         } else {
             break;
         }
