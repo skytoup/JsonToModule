@@ -84,7 +84,7 @@ void oc_out_property(OUT_RESULT_FUNCS *funcs, const char* property_name, Propert
     char *arr_p = NULL;
     switch (property_type) {
         case PropertyTypeArray: {
-            property_str = "NSArray";
+            property_str = "NSArray *";
             switch (obj_type) {
                 case PropertyTypeArray:
                     //
@@ -100,16 +100,16 @@ void oc_out_property(OUT_RESULT_FUNCS *funcs, const char* property_name, Propert
                     arr_p = "BOOL";
                     break;
                 case PropertyTypeNumber:
-                    arr_p = "NSNumber";
+                    arr_p = "NSNumber *";
                     break;
                 case PropertyTypeString:
-                    arr_p = "NSString";
+                    arr_p = "NSString *";
                     break;
             }
             break;
         }
         case PropertyTypeString:
-            property_str = "NSString";
+            property_str = "NSString *";
             modify = "copy";
             break;
         case PropertyTypeObject:
@@ -119,7 +119,7 @@ void oc_out_property(OUT_RESULT_FUNCS *funcs, const char* property_name, Propert
             fprintf(out_data->file, "#import \"%s.h\"\n", property_name);
             break;
         case PropertyTypeNumber:
-            property_str = "NSNumber";
+            property_str = "NSNumber *s";
             break;
         case PropertyTypeBool:
             property_str = "BOOL";
