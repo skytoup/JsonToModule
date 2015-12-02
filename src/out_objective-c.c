@@ -119,7 +119,7 @@ void oc_out_property(OUT_RESULT_FUNCS *funcs, const char* property_name, Propert
             fprintf(out_data->file, "#import \"%s.h\"\n", property_name);
             break;
         case PropertyTypeNumber:
-            property_str = "NSNumber *s";
+            property_str = "NSNumber *";
             break;
         case PropertyTypeBool:
             property_str = "BOOL";
