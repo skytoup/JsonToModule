@@ -35,11 +35,6 @@
 	json2moudle t.json -n test2 -o ~/Desktop/test -p test.com.hehe
 	json2moudle t.json -n test2 -o ~/Desktop/test
 	json2moudle t.json -n test2 -o ~/Desktop/test -p test.com.hehe --objc --java
-	
------
-##关于我
-* 一枚普通的即将大三的珠海大学生
-* 希望大三实习、毕业的工作地方都在珠海
 
 -----
 ##联系方式
